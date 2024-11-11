@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-bg-color: rgba(183,204,246,0.7);
+    --secondary-bg-color: rgba(7,43,127,0.67);
+    --text-color-light: aliceblue;
+    --text-color-dark: rgb(241, 236, 226);
+    --highlight-color: #5cbdbb;
+    --accent-color: rgba(153, 205, 50, 0.75);
+    --box-shadow-color: rgba(255,255,255,0.3);
+    --box-shadow-inset-color: rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: max-content;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(45deg, var(--main-bg-color), var(--secondary-bg-color)), url("./assets/noaa-5YryiYcFvtA-unsplash.jpg") no-repeat center center / cover;
+}
+
+.container {
+    padding: 1rem 5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    color: var(--text-color-dark);
+    font-family: "Mukta", sans-serif;
+}
+.search-bar{
+    display: flex;
+}
+#input{
+    border: none;
+    border-radius: 11px;
+    text-align: center;
+}
+.button {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 7.5em;
+    height: 2em;
+    border: #3654ff 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover {
+    background-color: #3654ff;
+    cursor: pointer;
+  }
+  
+  .button svg {
+    width: 1.4em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 1.5em
+  }
+
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    grid-gap: 25px;
+    align-items: center;
+    padding: 0 50px;
+    color: var(--text-color-light);
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--main-bg-color);
+}
+
+#city {
+    font-size: 30px;
+}
+
+#temperature {
+    font-size: 50px;
+    margin: 0 0 10px 30px;
+}
+
+.temp-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#clouds {
+    font-size: 20px;
+    background: var(--accent-color);
+    padding: 2px 20px;
+    border-radius: 15px;
+}
+
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.cast-header {
+    color: var(--text-color-light);
+    background: var(--main-bg-color);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.next p {
+    margin: 3px 0;
+}
+
+.time, .date {
+    color: rgb(231, 224, 216);
+}
+
+.desc {
+    color: rgba(209, 253, 119, 0.75);
+}
+
+.divider1, .divider2 {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.divider1 {
+    height: 200px;
+}
+
+.divider2 {
+    height: 5px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.forecstD {
+    margin: 20px 50px;
+}
+
+.weekF {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+}

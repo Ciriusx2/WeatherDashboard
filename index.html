@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherWise</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./assets/news.png" type="image/x-icon">
+  <link
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WEATHER</h1>
+            <div class="search-bar">
+                <input type="text" name="" id="input" placeholder="Enter city name">
+                <button class="button" id="search" onclick="searchByCity()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                      </svg>
+                      <div class="text">
+                        Search
+                      </div></button></input>
+            </div>
+        </div>
+        <main>
+            <div class="weather">
+                <h2 id="city">Delhi, IN</h2>
+                <div class="temp-box">
+                    <img src="./assets/download-removebg-preview.png" id="img" alt="weather-icon">
+                    <p id="temperature">25°C</p>
+                </div>
+                <span id="clouds">Cloudy</span>
+            </div>
+            <div class="divider"></div>
+            <div class="forecastH">
+                <p class="cast-header">Upcoming Forecast</p>
+                <div class="templist">
+                    <div class="next">
+                        <div>
+                            <p class="time">7:00 PM</p>
+                            <p>25°C / 29°C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+                    <div class="next">
+                        <div>
+                            <p class="time">7:00 PM</p>
+                            <p>25°C / 29°C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+                    <div class="next">
+                        <div>
+                            <p class="time">7:00 PM</p>
+                            <p>25°C / 29°C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+                    <div class="next">
+                        <div>
+                            <p class="time">7:00 PM</p>
+                            <p>25°C / 29°C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+                    <div class="next">
+                        <div>
+                            <p class="time">7:00 PM</p>
+                            <p>25°C / 29°C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="forecstD">
+            <div class="divider2"></div>
+            <p class="cast-header">Next 4 Days Forecast</p>
+            <div class="weekF">
+                <div class="dayF">
+                    <p class="date">Sat Jun 29 2024</p>
+                    <p>25°C / 31°C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+                <div class="dayF">
+                    <p class="date">Sat Jun 29 2024</p>
+                    <p>25°C / 31°C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+                <div class="dayF">
+                    <p class="date">Sat Jun 29 2024</p>
+                    <p>25°C / 31°C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+                <div class="dayF">
+                    <p class="date">Sat Jun 29 2024</p>
+                    <p>25°C / 31°C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/script.js"></script>
+</html>
